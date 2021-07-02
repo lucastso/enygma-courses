@@ -314,3 +314,24 @@ video {
   align-items: center;
   gap: 4rem;
 }
+
+.techs img {
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.techs img:hover {
+  transform: skewY(10deg);
+}
+
+.hours {
+  font-weight: 300;
+}
+
+.rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 600;
+}
