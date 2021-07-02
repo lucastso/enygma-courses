@@ -110,6 +110,13 @@ section {
   gap: 3rem;
 }
 
+.pro-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .blob {
   position: absolute;
   top: 60px;
@@ -171,6 +178,10 @@ section {
   -webkit-text-fill-color: transparent;
   font-weight: 600;
   font-size: 2.5rem;
+}
+
+.hero-first-p img {
+  padding-right: 10px;
 }
 
 .highlight {
@@ -423,4 +434,11 @@ video {
 
 .card-pro:hover {
   transform: skewY(5deg);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
