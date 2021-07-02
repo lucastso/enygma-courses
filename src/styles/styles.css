@@ -15,7 +15,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-image: linear-gradient(160deg, #121329 0%, #1a1229 100%);
+  background-color: #121329;
 }
 
 html {
@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  background-image: linear-gradient(160deg, #121329 0%, #1a1229 100%);
+  background-color: #121329;
   margin: 0 200px;
   overflow-x: hidden;
 }
@@ -133,6 +133,14 @@ section {
   bottom: -800px;
 }
 
+.blob4 {
+  position: absolute;
+  z-index: -4;
+  overflow: hidden;
+  bottom: -1500px;
+  right: 0;
+}
+
 .hero-section-1 {
   display: flex;
   align-items: center;
@@ -178,7 +186,8 @@ section {
   font-weight: 600;
 }
 
-.first-hero button {
+.first-hero button,
+.comprar {
   cursor: pointer;
   color: #fff;
   background-color: #362677;
@@ -334,4 +343,83 @@ video {
   align-items: center;
   flex-direction: column;
   font-weight: 600;
+}
+
+#prices {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  color: #fff;
+}
+
+.price {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.lower-line {
+  display: flex;
+  align-items: center;
+}
+
+.lower-line p {
+  margin: 10px;
+}
+
+.card-pro,
+.card-team,
+.card-basic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease-in-out;
+}
+
+.upper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.lower {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30px;
+  margin-bottom: 60px;
+}
+
+.upper:first-child {
+  font-size: 2rem;
+}
+
+.comprar {
+  font-size: 1.15rem;
+}
+
+.prices-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+.card-basic,
+.card-team {
+  transform: scale(0.8);
+}
+
+.card-basic:hover,
+.card-team:hover {
+  transform: skewY(5deg) scale(0.8);
+}
+
+.card-pro:hover {
+  transform: skewY(5deg);
 }
